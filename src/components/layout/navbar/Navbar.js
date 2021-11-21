@@ -17,7 +17,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
-import logo from '../../../images/log.png'
+import logo from '../../../images/catlogo.png'
 
 export const Navbar = withRouter(({ account, loadWeb3 }) => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -110,7 +110,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
             </Link>
             <Link to="/" className="whiteLink">
               <Typography className="title" variant="h6" noWrap>
-                NFT Pixels
+                NFT Cat Passport
               </Typography>
             </Link>
 
@@ -127,8 +127,9 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
             </Button>
 
             {/*  */}
-            <a target="_blank"  rel="noreferrer" className="whiteLink" href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies">Passport Maker</a>
-
+            <a target="_blank" rel="noreferrer" className="whiteLink" href="/">
+              PassportMaker
+            </a>
 
             <div className="grow" />
             <div className="sectionDesktop">

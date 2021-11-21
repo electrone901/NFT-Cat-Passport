@@ -9,7 +9,7 @@ import {
   Typography,
 } from '@material-ui/core'
 import './Footer.css'
-import logo from '../../../images/logo.jpg'
+import logo from '../../../images/catlogo.png'
 
 function Footer() {
   return (
@@ -56,7 +56,7 @@ function Footer() {
 
             <Grid item xs={12} sm={9}>
               <Typography className="copyright">
-                Copyright &copy; {new Date().getFullYear()} NFT Pixels
+                Copyright &copy; {new Date().getFullYear()} NFT Cat Passport
               </Typography>
             </Grid>
           </Grid>
