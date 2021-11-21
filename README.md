@@ -1,9 +1,9 @@
 # NFT Cat Passport
 
 
-NFT Cat Passport is a social dApp built for  cat lovers, and anyone who loves painting, design, or drawing.
+NFT Cat Passport is a social dApp  for  cat lovers,and anyone who loves painting, design, or drawing.
 
-NFT Cat Passport it’s a platform that allows you to save important documents of your cat in a fun way. These documents contain important details such as your pet’s identification, ownership and medical information. It is a digital record of your pet’s vaccinations, medical procedures and other treatments that can be used when the pet goes missing, or when the pet is travelling or in case of any accidents.
+NFT Cat Passport it’s a platform that allows you to save important documents of your cat in a fun way. These documents contain important details such as your pet’s identification, ownership and medical information. It is a digital record of your pet’s vaccinations, medical procedures and other treatments that can be used when the pet goes missing, or when the pet is travelling or in case of an accident.
 
 NFT Cat Passport it’s also a marketplace where owners can sell, buy, and swap NFTs.
 
@@ -22,6 +22,11 @@ How it's made?
 NFT Pixels application makes use of the following software:
 
 NFTStorage: the data is stored on NFTStorage IPFS, the generated hash (CID) will be used to view the details and to retrieve the NFT.
+
+- IPFS to stora NFTs
+- ​​ NFTPort for multi-chain NFT minting, and data transparency such as  distributing rewards and minting the NFT.
+-  Unlock for giving the user access to exclusive content
+
 
 
 #Cat Passport Maker Repo
