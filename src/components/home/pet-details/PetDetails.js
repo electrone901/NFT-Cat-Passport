@@ -25,6 +25,7 @@ import './PetDetails.css'
 import { CircularStatic } from '../../commons/CircularProgressWithLabel'
 import SeeMoreWork from '../see-more-work/SeeMoreWork'
 import WebViewer from '@pdftron/webviewer'
+import { apiKeyport } from '../../APIKEYPORT'
 
 function PetDetails({ account, contractData }) {
   const viewer = useRef(null)
@@ -174,6 +175,7 @@ function PetDetails({ account, contractData }) {
 
       console.log('data', data)
       setCodeHash(data)
+      mintWithNFTPort()
     } catch (err) {
       console.error(err)
     }
@@ -189,9 +191,41 @@ function PetDetails({ account, contractData }) {
     })
   }
 
+  //  mint
+
+  const mintWithNFTPort = (event) => {
+    event.preventDefault()
+    if (account === '') {
+      account = '0x5Df598c222C4A7e8e4AB9f347dcBd924B6458382'
+    }
+    console.log(' image', image)
+    const form = new FormData()
+    form.append('file', image)
+
+    const options = {
+      method: 'POST',
+      body: form,
+      headers: {
+        Authorization: apiKeyport,
+      },
+    }
+
+    fetch(
+      'https://api.nftport.xyz/easy_mint?' +
+        new URLSearchParams({
+          chain: 'polygon',
+          name: image,
+          msg:
+            'This is a gift for being a great member of our Community, thank you!',
+        }),
+      options,
+    ).then(function (response) {
+      return response.json()
+    })
+  }
+
   return (
     <StylesProvider injectFirst>
-    
       <Container className="root-pet-details">
         {winner ? (
           <Confetti
