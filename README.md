@@ -23,26 +23,25 @@ NFT Pixels application makes use of the following software:
 
 NFTStorage: the data is stored on NFTStorage IPFS, the generated hash (CID) will be used to view the details and to retrieve the NFT.
 
-- IPFS to stora NFTs
 - ​​ NFTPort for multi-chain NFT minting, and data transparency such as  distributing rewards and minting the NFT.
+
 -  Unlock for giving the user access to exclusive content
 
 
+- Solidity: Solidity was used for the smart contract together with OpenZeppelin ERC721 for faster development of the smart contract
 
-#Cat Passport Maker Repo
+- Ganache: for local blockchain development
+
+- Polygon, Matic Network: the network I deployed the app.
+
+- Frontend: React Js for the frontend, Material-UI, and Web3 to connect to the blockchain.
+
+# Demo
+ https://6g03v5crtshs99oqku7p81cj6dmeb9cs9pqbnlbu1t1tpcnnn90vsm0.siasky.net/
+
+
+# Cat Passport Maker Repo
 https://github.com/electrone901/cat-passport-maker.git
-
-We use everywhere IPFS, code line: https://github.com/electrone901/NFTStorag-pixel/blob/40ec4184a7b16e389692e8fbbc4d42fa57cd14f1/src/components/create-post/CreatePet.js#L40
-
-Solidity: Solidity was used for the smart contract together with OpenZeppelin ERC721 for faster development of the smart contract
-
-Ganache: for local blockchain development
-
-Polygon, Matic Network: the network I deployed the app.
-
-Frontend: React Js for the frontend, Material-UI, and Web3 to connect to the blockchain.
-
-Deployed website Demo: https://00012ucolb73g08pag0mikd4ffjusi5a5rlmiasrar4kut09jmtp8hg.siasky.net/pet-details/bafyreiccqxygmb4ozq3eycuwuf7czsodj527xtbg26cbt3xakv7ft3ar2m)
 
 # How it's made
 
